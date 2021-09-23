@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(211, 134, 134);
+}
+
+form textarea {
+    background-color: #1f1f1e;
+    text-decoration: none;
+    border: none;
+    display: block;
+    color: #fff;
+    height: 200px;
+  }

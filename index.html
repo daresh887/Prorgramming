@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="lib/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="mode/lua/lua.js"></script>
+
+    <title>Competitive Programming Website</title>
+</head>
+<body>
+    <h1 class="title">Competitive Prorgmaming Website</h1>
+    <p>Write your code here!</p>
+
+    <form>
+        <div id="textarea"></div>
+        <br>
+        <input id="SubmitButton" type="reset" value="Submit" onclick="document.getElementById('submitted').innerHTML = 'Code submitted!'"></input>
+    </form>
+
+
+    <p id="submitted"></p>
+</body>
+</html>
+
+
+
+<script>
+    var editor = CodeMirror(document.getElementById("textarea"));
+</script>
