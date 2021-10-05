@@ -8,9 +8,8 @@
 
     <script src="lib/codemirror.js"></script>
     <link rel="stylesheet" href="lib/codemirror.css">
-    <script src="mode/lua/lua.js"></script>
 
-    <script type="module" src="run.js"></script>
+    <script type="module" src="test.js"></script>
 
     <title>Competitive Programming Website</title>
 </head>
@@ -23,16 +22,13 @@
         <br>
         <input id="SubmitButton" type="reset" value="Submit" onclick="document.getElementById('submitted').innerHTML = 'Code submitted!'"></input>
     </form>
+    <p>hi lol </p>
 
+    <p id="languages"></p>
 
     <p id="submitted"></p>
 
     <img src="" id="rainbow"/>
-    <script>
-        fetch('https://run.glot.io/languages').then(response =>{
-            console.log(response);
-        });
-    </script>
 </body>
 </html>
 
@@ -40,4 +36,5 @@
 
 <script>
     var editor = CodeMirror(document.getElementById("textarea"));
+    console.log(console.log(anguage_list()));
 </script>
